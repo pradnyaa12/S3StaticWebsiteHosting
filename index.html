@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Static Website on AWS S3</title>
+  <style>
+    /* General Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Header Styles */
+    header {
+      background: #333;
+      color: white;
+      padding: 1.5rem 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    /* Main Content Styles */
+    main {
+      padding: 2rem 0;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .content {
+      margin-bottom: 2rem;
+    }
+
+    .content h2 {
+      color: #333;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .content p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    .content ul {
+      list-style-type: none;
+    }
+
+    .content ul li {
+      padding: 0.5rem 0;
+      font-size: 1.1rem;
+    }
+
+    /* Footer Styles */
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+
+    /* List Styles */
+    ol {
+      margin-left: 20px;
+    }
+
+    /* Responsive Design */
+    @media screen and (max-width: 768px) {
+      .container {
+        width: 90%;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+
+      header p {
+        font-size: 1rem;
+      }
+
+      .content h2 {
+        font-size: 1.5rem;
+      }
+
+      .content p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Welcome to My Static Website</h1>
+      <p>Hosted on AWS S3!</p>
+    </div>
+  </header>
+  
+  <main>
+    <div class="container">
+      <section class="content">
+        <h2>About the S3 static website Project</h2>
+        <p>This project demonstrates how to create and deploy a static website on AWS S3, leveraging its scalability and cost-effectiveness.</p>
+      </section>
+      
+      <section class="content">
+        <h2>Benefits of Using AWS S3 for Static Websites</h2>
+        <ul>
+          <li><strong>Scalability:</strong> AWS S3 automatically scales to handle high traffic loads without manual intervention.</li>
+          <li><strong>Cost-efficient:</strong> With S3, you only pay for the storage and bandwidth you use, making it very affordable.</li>
+          <li><strong>Fast & Reliable:</strong> S3 delivers content quickly through its global network of edge locations, ensuring fast load times for your website.</li>
+          <li><strong>Secure:</strong> S3 offers built-in encryption and access control, ensuring your content is secure.</li>
+          <li><strong>Easy to Set Up:</strong> Hosting a static website on S3 is straightforward and doesn't require complex infrastructure.</li>
+        </ul>
+      </section>
+
+      <section class="content">
+        <h2>Steps to Deploy Your Static Website on AWS S3</h2>
+        <ol>
+          <li><strong>Create an S3 Bucket:</strong> Go to the S3 console and create a bucket with a unique name and select the region closest to your target audience.</li>
+          <li><strong>Enable Static Website Hosting:</strong> In the S3 bucket settings, enable static website hosting and set `index.html` as your index document.</li>
+          <li><strong>Upload Your Files:</strong> Upload your `index.html`, `styles.css`, and any other assets (like `script.js`) to your S3 bucket.</li>
+          <li><strong>Set Permissions:</strong> Configure the files to be publicly accessible by updating their permissions to allow public read access.</li>
+          <li><strong>Access Your Website:</strong> After uploading the files, AWS will provide a URL where your static website can be accessed.</li>
+        </ol>
+      </section>
+
+      <section class="content">
+        <h2>Features of the Project</h2>
+        <ul>
+          <li>Simple static HTML, CSS, and JS files</li>
+          <li>Responsive design for mobile & desktop</li>
+          <li>Fast & cost-efficient hosting on AWS S3</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 My Static Website</p>
+  </footer>
+</body>
+</html>
